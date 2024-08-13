@@ -1,0 +1,176 @@
+/*Estilisando a pagina*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+  
+:root{
+    --Green-DNC: #5fff0394;
+    --Bgray-DNC: #202020;
+    --GHover-DNC: #5fff0357;
+    --mamba-DNC: #000000;
+    
+    --font-padrao: "Titillium Web"
+}
+
+
+
+
+body{
+    margin: 0px;; /* margem externa */
+    padding: 0px; /* margem interna */
+
+    background: linear-gradient(180deg,#5fff0394 20%, #202020 80% )#202020;
+    background-repeat: no-repeat;
+    
+}
+
+/* Menu principal de navegação*/
+
+#main{
+    width:100%;
+    height: 100px;
+    border: 1px solid var(--Bgray-DNC);
+    
+    background-color: var(--Bgray-DNC);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #bababa;
+}
+    #menu{
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 4%;
+}
+
+    #main div a{
+        font-family: var(--font-padrao);
+        font-size: 22px;
+        font-weight: 400;
+        color:var(--Green-DNC);
+        text-decoration: none;
+}
+
+        #main div a:hover{
+            color:var(--GHover-DNC)
+}
+
+
+    #main button{
+    margin-right: 24px;
+    background-color: var(--Green-DNC);
+    color:#e0dddd;
+
+    height: 50px;
+    width:90px;
+
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    font-weight: 400;
+
+    border: none;
+    border-radius: 36px;
+    box-shadow: 2px 1px 3px rgba(66, 242, 12, 0.479);
+    cursor:pointer;
+}
+
+/* Seção principal do site*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    header{
+        color:white;
+        font-family: var(--font-padrao);
+    }
+
+    header h1{
+        text-transform: uppercase;
+        font-size: 75px;
+        font-weight: 700;
+
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    header h2{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 400;
+
+        margin-bottom: 124px;
+    }
+
+    header .invert{
+        
+        background-color: var(--mamba-DNC);
+        font-weight: bold;
+        padding: 8px;
+    }
+
+    form{
+        color:white;
+        font-family: var(--font-padrao);
+        font-size: 30px;
+        font-weight: 400;
+        width: 600px;
+    }
+
+    .form-group{
+        display:flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    form input{
+        border-radius: 36px;
+        border: 0px;
+        height: 40px;
+
+        font-size: 20px;
+        padding:20px;
+        background-color: #c5c4c4c4;
+    }
+
+    form label{
+        margin: 60px 0px 10px 0px;
+    }
+
+    form input::placeholder{
+        color: rgba(57, 57, 57, 0.5);
+    }
+
+    .checkbox-itens label{
+        font-size: 25px ;
+        margin-top: 5px;
+    }
+
+    .checkbox-itens{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5px;
+     }
+
+     input[type="checkbox"]{
+        transform: scale(1.7);
+     }
+     
+     input[type="submit"]{
+        transform: scale(1.0);
+        background-color: var(--Green-DNC);
+        width: 50%;
+        height: 50px;
+        font-size: 24px;
+        color: var(--Bgray-DNC);
+        margin: 64px 0px 0px 150px;
+        padding: 15px 0px 40px 0px;
+     }
